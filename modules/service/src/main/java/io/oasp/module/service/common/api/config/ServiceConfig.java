@@ -43,6 +43,9 @@ public interface ServiceConfig {
   /** The key segment for the authentication mechanism (values are "basic", "oauth", etc.). */
   String KEY_SEGMENT_AUTH = "auth";
 
+  /** The key segment for the authentication mechanism (values are "basic", "oauth", etc.). */
+  String KEY_SEGMENT_JWT = "jwt";
+
   /**
    * The key segment for the user configuration sub-tree.
    *
@@ -76,6 +79,8 @@ public interface ServiceConfig {
 
   /** The value of {@link #KEY_SEGMENT_AUTH authentication} for OAuth. */
   String VALUE_AUTH_OAUTH = "oauth";
+
+  String VALUE_AUTH_JWT = "jwt";
 
   /**
    * @return the root {@link ConfigProperties}-node with the configuration for services.
